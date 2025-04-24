@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Discover beautiful and modern color palettes for your design and development projects." />
-  <meta name="keywords" content="color palette, web design colors, hex codes, design inspiration, UI colors, branding palettes" />
+  <meta name="description" content="ColorPaletteSpot offers free curated color palettes and hex codes for designers, developers, and artists. No signup required." />
+  <meta name="keywords" content="color palette, hex code, design colors, web design, color schemes, ui colors, creative inspiration" />
   <meta name="author" content="ColorPaletteSpot" />
-  <title>ColorPaletteSpot – Free Color Palettes for Creatives</title>
+  <title>ColorPaletteSpot – Free Color Palettes & Design Inspiration</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,13 +28,17 @@
       margin-top: 10px;
       font-size: 18px;
     }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: left;
+    }
     .palette-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
+      padding: 20px 0;
     }
     .palette {
       background: white;
@@ -48,7 +52,6 @@
     .color {
       flex: 1;
       height: 80px;
-      position: relative;
       cursor: pointer;
     }
     .hex {
@@ -62,6 +65,10 @@
       padding: 20px;
       font-size: 14px;
       color: #777;
+      text-align: center;
+    }
+    h2 {
+      color: #4a148c;
     }
   </style>
   <script>
@@ -75,42 +82,63 @@
 
   <header>
     <h1>ColorPaletteSpot</h1>
-    <p>Explore beautiful color combinations for your creative work</p>
+    <p>Explore beautiful color combinations for your creative projects</p>
   </header>
 
-  <div class="palette-grid">
-    <div class="palette">
-      <div class="colors">
-        <div class="color" style="background:#FFC107" onclick="copyColor('#FFC107')"></div>
-        <div class="color" style="background:#FF5722" onclick="copyColor('#FF5722')"></div>
-        <div class="color" style="background:#795548" onclick="copyColor('#795548')"></div>
+  <section>
+    <h2>Featured Color Palettes</h2>
+    <div class="palette-grid">
+      <div class="palette">
+        <div class="colors">
+          <div class="color" style="background:#FFC107" onclick="copyColor('#FFC107')"></div>
+          <div class="color" style="background:#FF5722" onclick="copyColor('#FF5722')"></div>
+          <div class="color" style="background:#795548" onclick="copyColor('#795548')"></div>
+        </div>
+        <div class="hex">#FFC107 #FF5722 #795548</div>
       </div>
-      <div class="hex">#FFC107 #FF5722 #795548</div>
-    </div>
-
-    <div class="palette">
-      <div class="colors">
-        <div class="color" style="background:#3F51B5" onclick="copyColor('#3F51B5')"></div>
-        <div class="color" style="background:#2196F3" onclick="copyColor('#2196F3')"></div>
-        <div class="color" style="background:#00BCD4" onclick="copyColor('#00BCD4')"></div>
+      <div class="palette">
+        <div class="colors">
+          <div class="color" style="background:#3F51B5" onclick="copyColor('#3F51B5')"></div>
+          <div class="color" style="background:#2196F3" onclick="copyColor('#2196F3')"></div>
+          <div class="color" style="background:#00BCD4" onclick="copyColor('#00BCD4')"></div>
+        </div>
+        <div class="hex">#3F51B5 #2196F3 #00BCD4</div>
       </div>
-      <div class="hex">#3F51B5 #2196F3 #00BCD4</div>
-    </div>
-
-    <div class="palette">
-      <div class="colors">
-        <div class="color" style="background:#4CAF50" onclick="copyColor('#4CAF50')"></div>
-        <div class="color" style="background:#8BC34A" onclick="copyColor('#8BC34A')"></div>
-        <div class="color" style="background:#CDDC39" onclick="copyColor('#CDDC39')"></div>
+      <div class="palette">
+        <div class="colors">
+          <div class="color" style="background:#4CAF50" onclick="copyColor('#4CAF50')"></div>
+          <div class="color" style="background:#8BC34A" onclick="copyColor('#8BC34A')"></div>
+          <div class="color" style="background:#CDDC39" onclick="copyColor('#CDDC39')"></div>
+        </div>
+        <div class="hex">#4CAF50 #8BC34A #CDDC39</div>
       </div>
-      <div class="hex">#4CAF50 #8BC34A #CDDC39</div>
     </div>
+  </section>
 
-    <!-- Add more palettes if you want -->
-  </div>
+  <section>
+    <h2>About ColorPaletteSpot</h2>
+    <p><strong>ColorPaletteSpot</strong> is a free resource built for designers, developers, and artists who want quick access to modern, curated color palettes. Whether you're building a brand, coding a UI, or painting a digital canvas, the right color combo makes all the difference.</p>
+    <p>This site was created with simplicity in mind — no logins, no tracking, no ads. Just hex codes and harmony.</p>
+  </section>
+
+  <section>
+    <h2>Blog: Choosing the Right Colors</h2>
+    <p>Colors affect mood, perception, and behavior. In design, choosing the right palette can help build trust, inspire action, or convey emotion. A great palette balances contrast and harmony — blending personal style with universal appeal.</p>
+    <p>When in doubt, start with nature-inspired palettes or use popular color pairings found in modern UI design. Need help? Copy one of the palettes above to get started instantly.</p>
+  </section>
+
+  <section>
+    <h2>Privacy Policy</h2>
+    <p>We do not collect any personal information. We use no cookies, trackers, or analytics tools. This is a completely privacy-friendly project built for the creative community.</p>
+  </section>
+
+  <section>
+    <h2>Terms of Use</h2>
+    <p>ColorPaletteSpot is intended for informational and creative inspiration purposes only. You may use the color palettes in personal or commercial work. This site is provided “as-is” without warranties. By using this website, you agree to use it responsibly.</p>
+  </section>
 
   <footer>
-    &copy; 2025 ColorPaletteSpot. All rights reserved. | No personal data collected.
+    &copy; 2025 ColorPaletteSpot. All rights reserved. | Built for creatives.
   </footer>
 
 </body>
