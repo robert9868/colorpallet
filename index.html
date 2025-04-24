@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Discover beautiful and modern color palettes for your design and development projects." />
+  <meta name="keywords" content="color palette, web design colors, hex codes, design inspiration, UI colors, branding palettes" />
+  <meta name="author" content="ColorPaletteSpot" />
+  <title>ColorPaletteSpot – Free Color Palettes for Creatives</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #4a148c;
+      color: white;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .palette {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .colors {
+      display: flex;
+    }
+    .color {
+      flex: 1;
+      height: 80px;
+      position: relative;
+      cursor: pointer;
+    }
+    .hex {
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      background: #fafafa;
+    }
+    footer {
+      background: #eee;
+      padding: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+  <script>
+    function copyColor(hex) {
+      navigator.clipboard.writeText(hex);
+      alert(`Copied: ${hex}`);
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>ColorPaletteSpot</h1>
+    <p>Explore beautiful color combinations for your creative work</p>
+  </header>
+
+  <div class="palette-grid">
+    <div class="palette">
+      <div class="colors">
+        <div class="color" style="background:#FFC107" onclick="copyColor('#FFC107')"></div>
+        <div class="color" style="background:#FF5722" onclick="copyColor('#FF5722')"></div>
+        <div class="color" style="background:#795548" onclick="copyColor('#795548')"></div>
+      </div>
+      <div class="hex">#FFC107 #FF5722 #795548</div>
+    </div>
+
+    <div class="palette">
+      <div class="colors">
+        <div class="color" style="background:#3F51B5" onclick="copyColor('#3F51B5')"></div>
+        <div class="color" style="background:#2196F3" onclick="copyColor('#2196F3')"></div>
+        <div class="color" style="background:#00BCD4" onclick="copyColor('#00BCD4')"></div>
+      </div>
+      <div class="hex">#3F51B5 #2196F3 #00BCD4</div>
+    </div>
+
+    <div class="palette">
+      <div class="colors">
+        <div class="color" style="background:#4CAF50" onclick="copyColor('#4CAF50')"></div>
+        <div class="color" style="background:#8BC34A" onclick="copyColor('#8BC34A')"></div>
+        <div class="color" style="background:#CDDC39" onclick="copyColor('#CDDC39')"></div>
+      </div>
+      <div class="hex">#4CAF50 #8BC34A #CDDC39</div>
+    </div>
+
+    <!-- Add more palettes if you want -->
+  </div>
+
+  <footer>
+    &copy; 2025 ColorPaletteSpot. All rights reserved. | No personal data collected.
+  </footer>
+
+</body>
+</html>
